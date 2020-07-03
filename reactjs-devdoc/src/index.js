@@ -3,49 +3,55 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import logo from './logo.svg';
-
-
+import logo from "./logo.svg";
 
 // Embedding expression in JSX
 // example 1
 const element1 = <h1>Hello World!</h1>;
 
 // example 2
-const name ='Pritesh Rane'
+const name = "Pritesh Rane";
 const element2 = <h1>Hello, {name}</h1>;
 
 // example 3
 function formatName(user) {
-  return user.firstName + ' ' + user.lastName
+  return user.firstName + " " + user.lastName;
 }
 
 const user = {
-  firstName: 'Pritesh',
-  lastName: 'Rane',
-  image: logo
-}
+  firstName: "Pritesh",
+  lastName: "Rane",
+  image: logo,
+};
 
-const element3 = (
-  <h1>
-    Hello, {formatName(user)}
-  </h1>
-)
-
-
+const element3 = <h1>Hello, {formatName(user)}</h1>;
 
 // JSX is an Expression Too
 function getGreeting(user) {
   if (user) {
-  return <h1>Hello, {formatName(user)}!</h1>
+    return <h1>Hello, {formatName(user)}!</h1>;
   }
-  return <h1>Hello, Stranger.</h1>
+  return <h1>Hello, Stranger.</h1>;
 }
 
-const element4 = getGreeting(user)
+const element4 = getGreeting(user);
 
 // Specifiying attributes with JSX
-const element5 = <img src={user.image}></img>
+const element5 = <img src={user.image}></img>;
+
+// Updating the Rendered Element
+// function tick() {
+//   const element = (
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <h2>It is {new Date().toLocaleTimeString()}.</h2>
+//     </div>
+//   );
+
+//   ReactDOM.render(element, document.getElementById(('root')))
+// }
+
+// setInterval(tick, 1000)
 
 ReactDOM.render(
   // element3,

@@ -3,6 +3,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
 import Comment from "./components/Comment";
+import ActionLink from "./components/ActionLink"
+import Toggle from "./components/Toggle"
+import LoggingButton from './components/LoggingButton'
 
 function App() {
   const author = {
@@ -36,6 +39,9 @@ function App() {
         text="Text from App to Comment"
         date="03-07-2020"
       />
+      <ActionLink />
+      <Toggle />
+      <LoggingButton />
     </div>
   );
 }

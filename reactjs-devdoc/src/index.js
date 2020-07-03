@@ -42,29 +42,29 @@ const element4 = getGreeting(user);
 const element5 = <img src={user.image}></img>;
 
 // Updating the Rendered Element
-function tick() {
-  const element = (
-      <Clock />
-  );
+// function tick() {
+//   const element = (
+//       <Clock />
+//   );
 
-  ReactDOM.render(element, document.getElementById(('root')))
-}
+//   ReactDOM.render(element, document.getElementById(('root')))
+// }
 
-setInterval(tick, 1000)
+// setInterval(tick, 1000)
 
 // Rendering a Component
 const element6 = <Welcome name="Sara" />
 
-// ReactDOM.render(
-//   // element3,
-//   // element4,
-//   // element5,
-//   // element6,
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById("root")
-// );
+ReactDOM.render(
+  // element3,
+  // element4,
+  // element5,
+  // element6,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

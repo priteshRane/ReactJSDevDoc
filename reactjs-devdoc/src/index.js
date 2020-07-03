@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import logo from "./logo.svg";
+import Welcome from './components/Welcome'
 
 // Embedding expression in JSX
 // example 1
@@ -53,13 +54,17 @@ const element5 = <img src={user.image}></img>;
 
 // setInterval(tick, 1000)
 
+// Rendering a Component
+const element6 = <Welcome name="Sara" />
+
 ReactDOM.render(
   // element3,
   // element4,
-  element5,
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
+  // element5,
+  // element6,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 );
 

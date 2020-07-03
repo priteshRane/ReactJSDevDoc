@@ -2,14 +2,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
-import Comment from "./components/Comment"
+import Comment from "./components/Comment";
 
 function App() {
-
   const author = {
     avatarUrl: logo,
-    name: "Rajiv"
-  }
+    name: "Rajiv",
+  };
 
   return (
     // <div className="App">
@@ -32,7 +31,11 @@ function App() {
       {/* Composing components */}
       <Welcome name="Sara" />
       <Welcome name="Cahal" />
-      <Comment author={author} text="Text from App to Comment" date="03-07-2020"/>
+      <Comment
+        author={author}
+        text="Text from App to Comment"
+        date="03-07-2020"
+      />
     </div>
   );
 }

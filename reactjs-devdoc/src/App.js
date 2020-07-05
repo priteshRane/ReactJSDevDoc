@@ -12,6 +12,7 @@ import Mailbox from "./components/Mailbox";
 import Page from "./components/Page"
 import NumberList from "./components/NumberList";
 import Blog from "./components/Blog"
+import NameForm from './components/NameForm'
 
 function App() {
   const author = {
@@ -66,6 +67,7 @@ function App() {
       <Page />
       <NumberList numbers={numbers}/>
       <Blog posts={posts} />
+      <NameForm />
     </div>
   );
 }

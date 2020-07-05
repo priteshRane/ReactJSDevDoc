@@ -11,6 +11,7 @@ import LoginControl from "./components/LoginControl";
 import Mailbox from "./components/Mailbox";
 import Page from "./components/Page"
 import NumberList from "./components/NumberList";
+import Blog from "./components/Blog"
 
 function App() {
   const author = {
@@ -23,6 +24,12 @@ function App() {
   const checkIfLogin = false
 
   const numbers = [1, 2, 3, 4, 5]
+
+  const posts = [
+    {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+    {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+  ];
+
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -58,6 +65,7 @@ function App() {
       <Mailbox unreadMessages={messages} />
       <Page />
       <NumberList numbers={numbers}/>
+      <Blog posts={posts} />
     </div>
   );
 }

@@ -3,9 +3,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./components/Welcome";
 import Comment from "./components/Comment";
-import ActionLink from "./components/ActionLink"
-import Toggle from "./components/Toggle"
-import LoggingButton from './components/LoggingButton'
+import ActionLink from "./components/ActionLink";
+import Toggle from "./components/Toggle";
+import LoggingButton from "./components/LoggingButton";
+import Greeting from "./components/Greeting";
+import LoginControl from "./components/LoginControl";
+import Mailbox from "./components/Mailbox";
+import Page from "./components/Page"
+import NumberList from "./components/NumberList";
 
 function App() {
   const author = {
@@ -13,6 +18,11 @@ function App() {
     name: "Rajiv",
   };
 
+  const messages = ["React", "Re: React", "Re:Re: React"];
+
+  const checkIfLogin = false
+
+  const numbers = [1, 2, 3, 4, 5]
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -42,6 +52,12 @@ function App() {
       <ActionLink />
       <Toggle />
       <LoggingButton />
+      <div>The use is <b>{checkIfLogin ? "currently" : "not"}</b> logged in.</div>
+      <Greeting isLoggedIn={false} />
+      <LoginControl />
+      <Mailbox unreadMessages={messages} />
+      <Page />
+      <NumberList numbers={numbers}/>
     </div>
   );
 }

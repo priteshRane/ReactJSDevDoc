@@ -13,6 +13,7 @@ import Page from "./components/Page"
 import NumberList from "./components/NumberList";
 import Blog from "./components/Blog"
 import NameForm from './components/NameForm'
+import Calculator from './components/LiftingStateUp/Calculator'
 
 function App() {
   const author = {
@@ -68,6 +69,7 @@ function App() {
       <NumberList numbers={numbers}/>
       <Blog posts={posts} />
       <NameForm />
+      <Calculator />
     </div>
   );
 }

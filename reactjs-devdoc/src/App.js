@@ -14,6 +14,7 @@ import NumberList from "./components/NumberList";
 import Blog from "./components/Blog"
 import NameForm from './components/NameForm'
 import Calculator from './components/LiftingStateUp/Calculator'
+import WelcomeDialog from './components/CompositionVsInheritance/WelcomeDialog'
 
 function App() {
   const author = {
@@ -70,6 +71,7 @@ function App() {
       <Blog posts={posts} />
       <NameForm />
       <Calculator />
+      <WelcomeDialog />
     </div>
   );
 }

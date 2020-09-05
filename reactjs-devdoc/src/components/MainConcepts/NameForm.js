@@ -20,7 +20,9 @@ class NameForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <div>
+        <h3 style={{ color: 'red' }}>Forms example:</h3>
+        <form onSubmit={this.handleSubmit}>
         <label>
           name:
           <input
@@ -46,6 +48,7 @@ class NameForm extends React.Component {
           </select>
         </label>
       </form>
+      </div>
     );
   }
 }

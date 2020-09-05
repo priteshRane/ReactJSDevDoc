@@ -46,6 +46,7 @@ class Calculator extends React.Component {
 
     return (
       <div>
+        <h3 style={{ color: 'red' }}>Lifting State Up example: </h3>
         <TemperatureInput
           scale="c"
           temperature={celsius}

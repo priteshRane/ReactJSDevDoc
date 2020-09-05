@@ -3,11 +3,13 @@ import Avatar from "./Avatar";
 
 function UserInfo(props) {
   return (
-    <div>
+    <div className="UserInfo">
       <Avatar user={props.user} />
-      <div>{props.user.name}</div>
+      <div className="UserInfo-name">
+        <h1>{props.user.name}</h1>
+      </div>
     </div>
   );
 }
 
-export default UserInfo;
+export default UserInfo

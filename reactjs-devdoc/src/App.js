@@ -12,6 +12,8 @@ import ListsAndKeys from './components/MainConcepts/ListsAndKeys/ListsAndKeys'
 import NameForm from './components/MainConcepts/NameForm'
 import Calculator from './components/MainConcepts/LiftingStateUp/Calculator'
 import CompositionVsInheritance from './components/MainConcepts/CompositionVsInheritance/CompositionVsInheritance'
+import Example from './components/HooksExamples/IntroducingHooks/IntroducingHooks'
+import ExampleFromManyStates from './components/HooksExamples/HooksAtAGlance/ExampleWithManyStates'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       <NameForm />
       <Calculator />
       <CompositionVsInheritance />
+      <Example />
+      <ExampleFromManyStates />
     </div>
   );
 }

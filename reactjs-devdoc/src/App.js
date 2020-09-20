@@ -12,8 +12,10 @@ import ListsAndKeys from './components/MainConcepts/ListsAndKeys/ListsAndKeys'
 import NameForm from './components/MainConcepts/NameForm'
 import Calculator from './components/MainConcepts/LiftingStateUp/Calculator'
 import CompositionVsInheritance from './components/MainConcepts/CompositionVsInheritance/CompositionVsInheritance'
-import Example from './components/HooksExamples/IntroducingHooks/IntroducingHooks'
+import ExampleFromIntroducingHooks from './components/HooksExamples/IntroducingHooks/Example'
 import ExampleFromManyStates from './components/HooksExamples/HooksAtAGlance/ExampleWithManyStates'
+import ExampleFromHooksAtGlance from './components/HooksExamples/HooksAtAGlance/Example'
+import FriendStatus from './components/HooksExamples/HooksAtAGlance/FriendStatus'
 
 function App() {
   return (
@@ -29,8 +31,10 @@ function App() {
       <NameForm />
       <Calculator />
       <CompositionVsInheritance />
-      <Example />
+      <ExampleFromIntroducingHooks />
       <ExampleFromManyStates />
+      <ExampleFromHooksAtGlance />
+      {/* <FriendStatus /> */}
     </div>
   );
 }

@@ -15,6 +15,8 @@ import CompositionVsInheritance from './components/MainConcepts/CompositionVsInh
 import ExampleFromIntroducingHooks from './components/HooksExamples/IntroducingHooks/Example'
 import ExampleStateFunction from './components/HooksExamples/UsingTheStateHook/ExampleStateFunction'
 import ExampleStateClass from './components/HooksExamples/UsingTheStateHook/ExampleStateClass'
+import EffectsWithoutCleanupUsingClassExample from './components/HooksExamples/UsingTheEffectHook/EffectsWithoutCleanupUsingClassExample'
+import EffectsWithoutCleanupUsingHookExample from './components/HooksExamples/UsingTheEffectHook/EffectsWithoutCleanupUsingHookExample'
 
 function App() {
   return (
@@ -36,6 +38,11 @@ function App() {
       <ExampleStateFunction />
       <h3 style={{color: "blue"}}>State with class example:</h3>
       <ExampleStateClass />
+      <h2 style={{color: "red"}}>Using the Effect Hook</h2>
+      <h3 style={{color: "blue"}}>Effects without Cleanup using Classes</h3>
+      <EffectsWithoutCleanupUsingClassExample />
+      <h3 style={{color: "blue"}}>Effects without Cleanup using Hooks</h3>
+      <EffectsWithoutCleanupUsingHookExample />
     </div>
   );
 }

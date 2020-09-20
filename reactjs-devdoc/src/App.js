@@ -13,9 +13,8 @@ import NameForm from './components/MainConcepts/NameForm'
 import Calculator from './components/MainConcepts/LiftingStateUp/Calculator'
 import CompositionVsInheritance from './components/MainConcepts/CompositionVsInheritance/CompositionVsInheritance'
 import ExampleFromIntroducingHooks from './components/HooksExamples/IntroducingHooks/Example'
-import ExampleFromManyStates from './components/HooksExamples/HooksAtAGlance/ExampleWithManyStates'
-import ExampleFromHooksAtGlance from './components/HooksExamples/HooksAtAGlance/Example'
-import FriendStatus from './components/HooksExamples/HooksAtAGlance/FriendStatus'
+import ExampleStateFunction from './components/HooksExamples/UsingTheStateHook/ExampleStateFunction'
+import ExampleStateClass from './components/HooksExamples/UsingTheStateHook/ExampleStateClass'
 
 function App() {
   return (
@@ -32,9 +31,11 @@ function App() {
       <Calculator />
       <CompositionVsInheritance />
       <ExampleFromIntroducingHooks />
-      <ExampleFromManyStates />
-      <ExampleFromHooksAtGlance />
-      {/* <FriendStatus /> */}
+      <h2 style={{color: "red"}}>Using the State Hook</h2>
+      <h3 style={{color: "blue"}}>State with function example:</h3>
+      <ExampleStateFunction />
+      <h3 style={{color: "blue"}}>State with class example:</h3>
+      <ExampleStateClass />
     </div>
   );
 }
